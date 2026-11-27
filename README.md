@@ -9,13 +9,29 @@
 
 ## 安装
 
+### 把链接发给 Codex 自动安装
+
+在 Codex 中粘贴整段指令。仓库里有两个 Skill，指令中列出了两个目录。
+
+> 请用 Codex 内置的 `$skill-installer`，从公开 GitHub 仓库 https://github.com/ljiao0729-lang/ai-talking-head-video-editing 的 `main` 分支安装这两个 Skill：`ai-talking-head-video-editing` 和 `recorded-talking-head-editor`。请确认两个都装好了。如果发现同名 Skill，先告诉我，不要覆盖。
+
+如果 Codex 请求联网或写入技能目录，确认后继续。安装完成后，打开一个新的 Codex 对话，按[开始剪第一条](#开始剪第一条)提供素材。如果当前环境没有 Skill 安装器，可以用下面的 ZIP 安装方式。
+
+### 下载 ZIP 手动安装
+
 1. 在 GitHub 仓库页选择 **Code → Download ZIP**，或[直接下载 ZIP](https://github.com/ljiao0729-lang/ai-talking-head-video-editing/archive/refs/heads/main.zip)，然后解压。
 2. 把里面的 `ai-talking-head-video-editing` 和 `recorded-talking-head-editor` 两个文件夹复制到 Codex 用户技能目录。macOS 和 Linux 通常是 `~/.codex/skills/`。如果设置了 `CODEX_HOME`，用该目录下的 `skills/`。
 3. 确认两个文件夹各自直接包含一个 `SKILL.md`。打开一个新的 Codex 对话，发送下面的启动语。已有旧版时，先备份自己改过的规则，再替换对应文件夹。
 
 ## 开始剪第一条
 
-> 按口播剪辑流程继续。原片在【目录】。这条要讲【选题或核心观点】。我已确认到【阶段】，请先交【这一步需要的产物】。
+第一次拿到素材，可以直接发：
+
+> 按口播剪辑流程继续。原片在【文件或目录】。请先转写，区分主持人和嘉宾，并按选题归类给我确认。
+
+已经做过一部分，可以发：
+
+> 按口播剪辑流程继续。原片在【文件或目录】，最新版在【逐字稿、确认稿或工程路径】。这条要讲【选题或核心观点】，我已确认到【阶段】，请先交【这一步需要的产物】。
 
 只有原片也可以开始。提供可访问的文件或目录，先做转写和选题归类。已有逐字稿、确认稿、试听或剪映工程时，一起提供，并说明哪份是最新版。多条视频分别标注已确认阶段。
 
